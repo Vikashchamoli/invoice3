@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabcart</title>
+    <style>
+        body{
+            background-color: #F6F6F6; 
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .brand-section{
+           background-color: white;
+           padding: 10px 40px;
+           color: black;
+        }
+        .logo{
+            width: 50%;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-6{
+            width: 50%;
+            flex: 0 0 auto;
+        }
+        .text-white{
+            color:black;
+        }
+        .company-details{
+            float: right;
+            text-align: right;
+        }
+        .body-section{
+            padding: 16px;
+            border: 1px solid gray;
+        }
+        .heading{
+            font-size: 20px;
+            margin-bottom: 08px;
+        }
+        .sub-heading{
+            color: #262626;
+            margin-bottom: 05px;
+        }
+        table{
+            background-color: #fff;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table thead tr{
+            border: 1px solid #111;
+            background-color: black;
+            color: white;
+        }
+        table td {
+            vertical-align: middle !important;
+            text-align: center;
+        }
+        table th, table td {
+            padding-top: 08px;
+            padding-bottom: 08px;
+        }
+        .table-bordered{
+            box-shadow: 0px 0px 5px 0.5px gray;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #dee2e6;
+        }
+        .text-right{
+            text-align: end;
+        }
+        .w-20{
+            width: 20%;
+        }
+        .float-right{
+            float: right;
+        }
+
+        body {
+  background: rgb(204,204,204); 
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+page[size="A4"][layout="portrait"] {
+  width: 29.7cm;
+  height: 21cm;  
+}
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <page size="A4">
+    <div class="container">
+        <div class="brand-section">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="text-white">Billed To</h3>
+                    <p class="text-white">Your client<br>1234 client street city,california<br>90210<br>united states<br>1-888-123-8910</p>
+
+                   
+                </div>
+                <div class="col-6">
+                    <div class="company-details">
+                        <p class="text-white">Amount Due &nbsp; &nbsp;&nbsp;<br><br>&nbsp;10/12/2024&nbsp;</p>
+                           
+                            
+                            
+                    </div>
+                    <div class="company-details">
+                       
+                        <p class="text-white">Invoice No &nbsp; <br><br>10/12/2024&nbsp;</p>
+                        
+                        
+                </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            
+                            <p class="text-white">Date Issued <br>10/12/2024</p>
+                            <br>
+                            <p class="text-white">Due Date <br>10/12/2024 </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="body-section">
+            
+            <br>
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th class="w-20">Rate</th>
+                        <th class="w-20">QTY</th>
+                        <th class="w-20">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><B>Services</B><br>cost of various services </td>
+                        <td>$550 <br>-Tax</td>
+                        <td>10</td>
+                        <td>$550</td>
+                    </tr>
+                    <tr>
+                        <td><B>Consulting</B><br>consulting of your bussiness</td>
+                        <td>$550 <br>-Tax</td>
+                        <td>10</td>
+                        <td>$550</td>
+                    </tr>
+                    <tr>
+                        <td><B>Materials</B><br>cost of materials and supplies to complete job</td>
+                        <td>$550 <br>-Tax</td>
+                        <td>10</td>
+                        <td>$550</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Sub Total</td>
+                        <td>$1739.35</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Discount</td>
+                        <td>$173.35</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="3" class="text-right">Tax</td>
+                        <td>$400</td>
+                    
+                    <tr>
+                        <td colspan="3" class="text-right">Total</td>
+                        <td>$400</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Deposit Requested</td>
+                        <td>$400</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right"><b>Deposit Due</b></td>
+                        <td>$400</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+           
+            
+        </div>
+
+        <div class="body-section">
+            <p>Notes
+                <br> Thank you for your business!
+               
+            </p>
+        </div>      
+    </div>      
+</page>
+</body>
+</html>
